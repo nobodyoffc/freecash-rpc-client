@@ -1341,13 +1341,11 @@ public interface BitcoindRpcClient {
  /**
   * The estimatefee RPC estimates the transaction fee per kilobyte that needs to be paid for a transaction to be included within a certain number of blocks.
   * 
-  * @param nBlocks The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block.
   * @return The estimated fee the transaction should pay in order to be included within the specified number of blocks.
   * 
   * @see <a href="https://bitcoin.org/en/developer-reference#estimatefee">estimatefee</a>
   */
- @Deprecated
- BigDecimal estimateFee(int nBlocks) throws GenericRpcException;
+ BigDecimal estimateFee() throws GenericRpcException;
 
  /***************************************************************************************************************************/
   

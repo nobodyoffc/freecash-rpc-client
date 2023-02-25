@@ -966,8 +966,8 @@ public class BitcoinJSONRPCClient implements BitcoindRpcClient {
   }
 
   @Override
-  public BigDecimal estimateFee(int nBlocks) throws GenericRpcException {
-    return (BigDecimal) query("estimatefee", nBlocks);
+  public BigDecimal estimateFee() throws GenericRpcException {
+    return (BigDecimal) query("estimatefee");
   }
 
   @Override
